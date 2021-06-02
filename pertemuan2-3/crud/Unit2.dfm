@@ -1,14 +1,15 @@
 object dm: Tdm
   OldCreateOrder = False
-  Left = 184
-  Top = 918
+  Left = 269
+  Top = 754
   Height = 157
   Width = 279
   object konekdb: TADOConnection
     Connected = True
     ConnectionString = 
       'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Delphi Project\p' +
-      'raktikum\pertemuan2\crud\dbcrud.mdb;Persist Security Info=False'
+      'raktikum\pertemuan2-3\crud\dbcrud.mdb;Persist Security Info=Fals' +
+      'e'
     LoginPrompt = False
     Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'

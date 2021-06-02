@@ -2,16 +2,18 @@ program Project1;
 
 uses
   Forms,
-  Unit1 in 'Unit1.pas' {Form1},
+  Unit1 in 'Unit1.pas' {f_tampilbuku},
   Unit2 in 'Unit2.pas' {dm: TDataModule},
-  Unit3 in 'Unit3.pas' {Form3};
+  Unit3 in 'Unit3.pas' {f_tambahbuku},
+  Unit4 in 'Unit4.pas' {f_laporan};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(Tf_tampilbuku, f_tampilbuku);
   Application.CreateForm(Tdm, dm);
-  Application.CreateForm(TForm3, Form3);
+  Application.CreateForm(Tf_tambahbuku, f_tambahbuku);
+  Application.CreateForm(Tf_laporan, f_laporan);
   Application.Run;
 end.

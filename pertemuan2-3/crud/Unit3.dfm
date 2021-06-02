@@ -1,9 +1,9 @@
-object Form3: TForm3
-  Left = 747
-  Top = 480
+object f_tambahbuku: Tf_tambahbuku
+  Left = 518
+  Top = 274
   Width = 365
   Height = 321
-  Caption = 'Form3'
+  Caption = 'Input Data Buku'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,9 +11,10 @@ object Form3: TForm3
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
-  object l_1: TLabel
+  object l_judul: TLabel
     Left = 16
     Top = 16
     Width = 201
@@ -26,7 +27,7 @@ object Form3: TForm3
     Font.Style = [fsBold]
     ParentFont = False
   end
-  object l_2: TLabel
+  object l_nomorbuku: TLabel
     Left = 22
     Top = 61
     Width = 89
@@ -39,7 +40,7 @@ object Form3: TForm3
     Font.Style = []
     ParentFont = False
   end
-  object l_3: TLabel
+  object l_judulbuku: TLabel
     Left = 22
     Top = 101
     Width = 78
@@ -78,7 +79,7 @@ object Form3: TForm3
     Font.Style = []
     ParentFont = False
   end
-  object e_1: TEdit
+  object e_nomorbuku: TEdit
     Left = 158
     Top = 57
     Width = 169
@@ -91,7 +92,7 @@ object Form3: TForm3
     ParentFont = False
     TabOrder = 0
   end
-  object e_2: TEdit
+  object e_judulbuku: TEdit
     Left = 158
     Top = 97
     Width = 169
@@ -104,7 +105,7 @@ object Form3: TForm3
     ParentFont = False
     TabOrder = 1
   end
-  object e_3: TEdit
+  object e_kategori: TEdit
     Left = 158
     Top = 137
     Width = 169
@@ -117,7 +118,7 @@ object Form3: TForm3
     ParentFont = False
     TabOrder = 2
   end
-  object e_4: TEdit
+  object e_keterangan: TEdit
     Left = 158
     Top = 185
     Width = 169
@@ -130,20 +131,22 @@ object Form3: TForm3
     ParentFont = False
     TabOrder = 3
   end
-  object bt_1: TButton
+  object bt_simpan: TButton
     Left = 91
     Top = 240
     Width = 75
     Height = 25
     Caption = 'Simpan'
     TabOrder = 4
+    OnClick = bt_simpanClick
   end
-  object bt_2: TButton
+  object bt_batal: TButton
     Left = 179
     Top = 240
     Width = 75
     Height = 25
-    Caption = 'Close'
+    Caption = 'Batal'
     TabOrder = 5
+    OnClick = bt_batalClick
   end
 end
